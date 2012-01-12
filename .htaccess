@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymLinks
+RewriteCond %{REQUEST_URI} !css|scripts|images|install|flash|favicon.ico|robots.txt|sitemap.xml|bestbuys_promotion_new2.php|css.php|js.php|assets
+RewriteRule .* index.php

@@ -1,0 +1,83 @@
+/*
+ *	CodeFred(tm) : Rapid Development Framework
+ *	Copyright 2008-2012, JuvaSoft Web Solutions
+ *						 <www.juvasoft.com>
+ *
+ *	Licensed under the MIT License
+ *	Redistributions of files must retain the above copyright notice.
+ *
+ *	@package	CodeFred
+ *	@author		Alfredo Juárez
+ *	@version	1.0
+ *
+ *	File: layout.css
+ *
+ */
+
+@charset "utf-8";
+
+#divCargando {
+	z-index: 99999;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	background-color: red;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	padding: 5px;
+	visibility: hidden;
+}
+
+.flashMessage, #flashMessage {
+	background: #458704;
+	right: 20px;
+	top: 40px;
+	position: absolute;
+	width: 475px;
+	height: 25px;
+	color: #fff;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 15px;
+
+	/* CSS3 Gradients */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#458704', endColorstr='#76b835'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#458704), to(#76b835)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #458704,  #76b835); /* for firefox 3.6+ */
+
+	outline-radius:10px;
+	-moz-outline-radius:10px;
+	-webkit-outline-radius:10px;
+
+	border-radius: 0 0 15px 15px;
+}
+
+#flashMessage, #errorMessage {
+	display: none;
+}
+
+#errorMessage, .errorMessage {
+	background: #9b2f0d;
+	right: 20px;
+	top: 40px;
+	position: absolute;
+	width: 475px;
+	height: 25px;
+	color: #fff;
+	font-size: 13pt;
+	font-weight: bold;
+	padding: 15px;
+
+	border-radius: 0 0 15px 15px;
+
+	/* CSS3 Gradients */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c00', endColorstr='#9b2f0d'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#ff3c00), to(#9b2f0d)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #ff3c00,  #9b2f0d); /* for firefox 3.6+ */
+
+	outline-radius:10px;
+	-moz-outline-radius:10px;
+	-webkit-outline-radius:10px;
+}

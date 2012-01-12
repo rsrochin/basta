@@ -1,0 +1,3 @@
+[submodule "ppi"]
+	path = ppi
+	url = https://github.com/ppi/framework
